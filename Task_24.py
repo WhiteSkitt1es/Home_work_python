@@ -17,3 +17,16 @@
 
 # 5
 # 9 1 1 4 9 => 22
+from random import randint
+a = int(input('Введите количество кустов: '))
+
+array = [randint(1,10) for i in range(a)]
+
+array1 = array + array
+
+maxsum = 0
+
+for i in range(len(array)):
+    maxsum = max(maxsum, array1[i] + array1[i + 1] + array1[i + 2])
+print(array)
+print(maxsum)
