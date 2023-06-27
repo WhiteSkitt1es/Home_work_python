@@ -8,3 +8,14 @@
 # 11 6
 # 2 4 6 8 10 12 10 8 6 4 2  => 6 12
 # 3 6 9 12 15 18
+from random import randint
+
+a = int(input('Введите размер первого набора чисел: '))
+b = int(input('Введите размер второго набора чисел: '))
+array1 =[randint(1,10) for i in range(a)]
+array2 =[randint(1,10) for i in range(b)]
+array3 = sorted(list(set(array1) & set(array2)))
+
+print(*array1)
+print(*array2)
+print(*array3)
