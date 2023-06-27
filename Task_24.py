@@ -22,7 +22,7 @@ a = int(input('Введите количество кустов: '))
 
 array = [randint(1,10) for i in range(a)]
 
-array1 = array + array
+array1 = array + array[:2]
 
 maxsum = 0
 
