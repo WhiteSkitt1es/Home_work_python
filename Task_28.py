@@ -3,4 +3,17 @@
 
 # *Пример:*
 
-# 2 2 => 4 
+# 2 2 => 4
+
+a = int(input('Введите число А: '))
+b = int(input('Введите число B: '))
+
+
+def recursionSum(a,b):
+    if b == 0:
+        return a
+    else:
+        return recursionSum(a + 1, b - 1)
+    
+print(recursionSum(a,b))
+
