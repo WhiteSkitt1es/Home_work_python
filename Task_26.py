@@ -10,10 +10,10 @@ a = int(input('Введите число А: '))
 b = int(input('Введите число B: '))
 
 
-def recursionSum(a,b):
+def recursionMult(a,b):
     if b == 1:
         return a
     else:
-        return a * recursionSum(a,b - 1)
+        return a * recursionMult(a,b - 1)
     
-print(recursionSum(a,b))
+print(recursionMult(a,b))
