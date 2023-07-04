@@ -14,6 +14,6 @@ list_1 = []
 for i in range(c):
     if i <= c:
         i += 1
-        ac = a + (i - 1) * 2
+        ac = a + (i - 1) * b
         list_1.append(ac)
 print(list_1)
