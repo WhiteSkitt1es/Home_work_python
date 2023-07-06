@@ -13,5 +13,17 @@
 
 list_1 = input('Вини! Произнеси свою фразу: ')
 list_1 = list_1.split()
+list_2 = ['а', 'я', 'у', 'ю', 'о', 'е', 'ё', 'э', 'и', 'ы']
+list_3 = []
 
-        
+for item in list_1:
+    count = 0
+    for letter in item:
+        if letter in list_2:
+            count += 1
+    list_3.append(count)
+if len(set(list_3)) == 1:
+    print('Парам пам-пам')
+else:
+    print('Пам парам')
+
